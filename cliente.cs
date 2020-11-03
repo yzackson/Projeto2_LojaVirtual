@@ -1,49 +1,28 @@
 using System;
 using System.Collections.Generic;
 
-class Cliente
-{
+class Cliente {
 
-    private string NomeDoCliente;
-    private int IdadeDoCliente;
-    private string CpfDoCliente;
-    private string EnderecoDoCliente;
-
-    // Construtor completo :: obriga o cliente a cadastrar todos os dados
-    public Cliente(string nome, int idade, string cpf, string endereco)
-    {
-        NomeDoCliente = nome;
-        IdadeDoCliente = idade;
-        CpfDoCliente = cpf;
-        EnderecoDoCliente = endereco;
-    }
+    string _nome;
+    string _endereco;
+    int _telefone;
 
     // Get-Set do Nome do Cliente
-    public string NomeCliente
-    {
-        get { return NomeDoCliente; }
-        set { NomeDoCliente = value; }
-    }
-
-    // Get-Set da Idade do Cliente
-    public int IdadeCliente
-    {
-        get { return IdadeDoCliente; }
-        set { IdadeDoCliente = value; }
+    public string nome {
+        get { return _nome; }
+        set { _nome = value; }
     }
 
     // Get-Set do CPF do Cliente
-    public string CpfCliente
-    {
-        get { return CpfDoCliente; }
-        set { CpfDoCliente = value; }
+    public string endereco {
+        get { return _endereco; }
+        set { _endereco = value; }
     }
 
     // Get-Set do Endereco do Cliente
-    public string EnderecoCliente
-    {
-        get { return EnderecoDoCliente; }
-        set { EnderecoDoCliente = value; }
+    public int telefone {
+        get { return _telefone; }
+        set { _telefone = value; }
     }
 
 
